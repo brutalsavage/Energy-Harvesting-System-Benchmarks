@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp
+"msp430_controller\startup_stm32f411xe.o"
+"msp430_controller\stm32f4xx_hal_pwr_ex.o"
+"msp430_controller\stm32f4xx_hal_uart.o"
+"msp430_controller\stm32f4xx_hal_gpio.o"
+"msp430_controller\stm32f4xx_hal_rcc.o"
+"msp430_controller\stm32f4xx_hal_dma_ex.o"
+"msp430_controller\stm32f4xx_hal_dma.o"
+"msp430_controller\stm32f4xx_hal_tim_ex.o"
+"msp430_controller\stm32f4xx_hal_rcc_ex.o"
+"msp430_controller\stm32f4xx_hal_flash.o"
+"msp430_controller\stm32f4xx_hal_pwr.o"
+"msp430_controller\stm32f4xx_hal_tim.o"
+"msp430_controller\stm32f4xx_hal.o"
+"msp430_controller\stm32f4xx_hal_flash_ex.o"
+"msp430_controller\stm32f4xx_hal_cortex.o"
+"msp430_controller\stm32f4xx_hal_flash_ramfunc.o"
+"msp430_controller\system_stm32f4xx.o"
+"msp430_controller\stm32f4xx_hal_msp.o"
+"msp430_controller\main.o"
+"msp430_controller\stm32f4xx_it.o"
+--library_type=microlib --strict --scatter "msp430_controller\msp430_controller.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "msp430_controller.map" -o msp430_controller\msp430_controller.axf
